@@ -1,0 +1,67 @@
+/*FORMATANDO PORTIFÓLIO*/
+
+.portifolio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--cor-bg-sobreMim);
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);  
+}
+
+.texto-portifolio {
+    flex: 1;
+}
+
+.portifolio h2 {
+    font-size: 2rem;
+    color: var(--cor-h2-sobremim);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.portifolio p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+.texto-portifolio a {
+    color: blue;
+    text-decoration: none;  
+}
+.texto-portifolio a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.portifolio strong {
+    color: var(--cor-sobremim-destaque);
+}
+
+.imagem-portifolio {
+    flex: 1;
+    text-align: center;
+}
+.imagem-portifolio img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* RESPONSIVIDADE  PORTIFÓLIO*/
+@media (max-width: 768px) {
+    .portifolio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagem-portifolio {
+        margin-top: 1rem;
+    }
+}
